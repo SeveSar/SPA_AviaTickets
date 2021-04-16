@@ -13,7 +13,25 @@
 .align-items-start {
   align-items: flex-start;
 }
+.modal-message-favorite {
+  background-color: rgba(124,5,130, 0.5);
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  left: 24%;
+  transform: translateX(-50%);
+  top: 64px;
+  z-index: 9999;
+  color: white;
+  transition: all .3s linear;
+  opacity: 0;
+  border-radius: 20px;
 
+}
+.modal-message-favorite span {
+  text-transform: uppercase;
+}
 .justify-items-center {
   justify-items: center;
 }
@@ -35,10 +53,10 @@
   margin-right: auto;
 }
 .d-none {
-  display: none !important;
+  visibility: hidden !important;
 }
 .d-show {
-  display: inline-block !important;
+  visibility: visible !important;
 }
 /* Header styles */
 .header .brand-logo {
